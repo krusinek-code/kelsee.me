@@ -1,0 +1,57 @@
+name: Deploy SRP microsite
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "srp/**"
+      - ".github/workflows/deploy-srp.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-srp-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    permissions:
+      contents: read
+
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Validate deployment configuration
+        env:
+          DREAMHOST_HOST: ${{ secrets.DREAMHOST_HOST }}
+          DREAMHOST_USER: ${{ secrets.DREAMHOST_USER }}
+          DREAMHOST_PATH: ${{ secrets.DREAMHOST_PATH }}
+          DREAMHOST_SSH_KEY: ${{ secrets.DREAMHOST_SSH_KEY }}
+        run: |
+          test -n "$DREAMHOST_HOST"
+          test -n "$DREAMHOST_USER"
+          test -n "$DREAMHOST_PATH"
+          test -n "$DREAMHOST_SSH_KEY"
+
+      - name: Configure SSH
+        env:
+          DREAMHOST_HOST: ${{ secrets.DREAMHOST_HOST }}
+          DREAMHOST_SSH_KEY: ${{ secrets.DREAMHOST_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$DREAMHOST_SSH_KEY" > ~/.ssh/dreamhost_deploy
+          chmod 600 ~/.ssh/dreamhost_deploy
+          ssh-keyscan -H "$DREAMHOST_HOST" >> ~/.ssh/known_hosts
+
+      - name: Upload SRP microsite
+        env:
+          DREAMHOST_HOST: ${{ secrets.DREAMHOST_HOST }}
+          DREAMHOST_USER: ${{ secrets.DREAMHOST_USER }}
+          DREAMHOST_PATH: ${{ secrets.DREAMHOST_PATH }}
+        run: |
+          remote_root="${DREAMHOST_PATH%/}"
+          ssh -i ~/.ssh/dreamhost_deploy "$DREAMHOST_USER@$DREAMHOST_HOST" "mkdir -p \"$remote_root/srp\""
+          rsync -az --checksum -e "ssh -i ~/.ssh/dreamhost_deploy" srp/ "$DREAMHOST_USER@$DREAMHOST_HOST:$remote_root/srp/"
