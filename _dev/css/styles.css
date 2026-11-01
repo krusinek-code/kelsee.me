@@ -1,0 +1,438 @@
+  :root {
+    --orange: #F0913F;
+    --orange-soft: #F7B57C;
+    --ink: #1C1B19;
+    --body: #3E3A34;
+    --muted: #77716A;
+    --cream: #FDFBF7;
+    --paper: #FFFFFF;
+    --tan: #A3927C;
+    --rule: #E8E2D8;
+    --maxw: 1060px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  ::selection { background: var(--orange); color: #FFFFFF; }
+  ::-moz-selection { background: var(--orange); color: #FFFFFF; }
+
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+
+  body {
+    font-family: 'Poppins', system-ui, sans-serif; 
+    font-weight: 400;
+    color: var(--body);
+    background: var(--cream);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; }
+  a:focus-visible, button:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .page {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    background: var(--paper);
+    box-shadow: 0 2px 40px rgba(60, 45, 25, 0.08);
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    align-items: center;
+    padding: 64px 64px 48px;
+  }
+
+  .portrait {
+    position: relative;
+    width: 230px;
+    height: 230px;
+  }
+  .portrait::before {
+    content: "";
+    position: absolute;
+    inset: -12px auto auto -12px;
+    width: 160px;
+    height: 160px;
+    background: var(--orange);
+    border-radius: 36px 8px 8px 8px;
+  }
+  .portrait::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    width: 120px;
+    height: 120px;
+    background: var(--orange);
+    border-radius: 8px 8px 36px 8px;
+  }
+  .portrait .frame {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 44px;
+    overflow: hidden;
+    background: linear-gradient(160deg, #5a5148, #2c2823);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portrait .frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  /* placeholder shown until a real headshot replaces it */
+  .portrait .initials {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: var(--orange-soft);
+  }
+
+  .hero h1 {
+    font-size: clamp(46px, 7vw, 76px);
+    line-height: 0.98;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -1px;
+  }
+  .hero h1 .first {
+    color: var(--orange);
+    display: inline-flex;
+    align-items: baseline;
+  }
+
+  .hero .role {
+    margin-top: 14px;
+    font-size: clamp(20px, 2.6vw, 26px);
+    font-weight: 300;
+    color: var(--ink);
+  }
+  .hero .tags {
+    margin-top: 6px;
+    font-size: clamp(14px, 1.8vw, 17px);
+    color: var(--body);
+    font-weight: 400;
+  }
+  .hero .tags span { white-space: nowrap; }
+  .hero .tags .dot { color: var(--orange); font-weight: 600; padding: 0 6px; }
+
+  /* ============ LAYOUT ============ */
+  .columns {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 56px;
+    padding: 16px 64px 48px;
+  }
+
+  h2 {
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 22px;
+  }
+
+  section + section { margin-top: 48px; }
+
+  /* ---- sidebar ---- */
+  .contact ul { list-style: none; }
+  .contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: var(--body);
+  }
+  .contact li svg {
+    flex: 0 0 18px;
+    margin-top: 4px;
+    fill: var(--ink);
+  }
+  .contact a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .contact a:hover { color: var(--orange); border-bottom-color: var(--orange); }
+
+  .caps ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .caps li {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: var(--ink);
+    background: var(--cream);
+    border: 1px solid var(--rule);
+    border-radius: 100px;
+    padding: 6px 14px;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .caps li:hover { border-color: var(--orange); background: #FFF6EC; }
+
+  .edu .asu { display: block; width: 120px; height: auto; margin: 4px 0 12px; }
+  .edu .school {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink);
+    margin-bottom: 6px;
+  }
+  .edu .degree { font-size: 15px; line-height: 1.5; }
+  .edu .honors { font-style: italic; color: var(--muted); font-size: 14.5px; }
+
+  /* ---- main ---- */
+  .profile p { margin-bottom: 16px; }
+  .profile em {
+    font-style: italic;
+    font-weight: 600;
+    color: var(--orange);
+  }
+
+  /* experience timeline */
+  .job {
+    position: relative;
+    padding-left: 32px;
+    border-left: 2px solid var(--orange);
+    padding-bottom: 40px;
+  }
+  .job:last-child { padding-bottom: 4px; }
+  .job::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--orange);
+  }
+  .job header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .job h3 {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .job .tenure {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--muted);
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .job .title {
+    font-size: 15.5px;
+    color: var(--body);
+    margin-bottom: 12px;
+  }
+  /* easter egg links (deep cuts) — deliberately quiet:
+     no underline until hover, then a wink of orange */
+  .job a.egg {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent;
+    transition: border-color 0.2s, color 0.2s;
+  }
+  .job a.egg:hover {
+    color: var(--orange);
+    border-bottom-color: var(--orange);
+  }
+  .job sup.fn { font-size: 0.62em; line-height: 0; }
+  .job sup.fn a {
+    color: var(--orange);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 2px;
+  }
+  .job .footnote {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .job .footnote sup { color: var(--orange); font-weight: 600; margin-right: 2px; }
+  .job ul { list-style: none; }
+  .job li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 9px;
+    font-size: 15.5px;
+  }
+  .job li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--ink);
+  }
+
+  .clients {
+    padding: 40px 64px 72px;
+    border-top: 1px solid var(--rule);
+  }
+  .clients-inner { width: 100%; }
+  .clients h2 { border-bottom: none; padding-bottom: 0; }
+  .clients ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px 40px;
+  }
+  .clients li { display: flex; align-items: center; justify-content: center; }
+  .clients a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+  .clients img {
+    max-height: 52px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  /* linked logos: animated fade up to full strength on hover/focus */
+  .clients a img {
+    opacity: 0.55;
+    transition: opacity 0.4s ease;
+    /* variant: add `filter: grayscale(1);` here and `filter: grayscale(0);`
+       below for a gray-to-color reveal instead of a pure fade */
+  }
+  .clients a:hover img,
+  .clients a:focus-visible img { opacity: 1; }
+  /* non-linked logos: static light gray, no animation */
+  .clients li.static img {
+    opacity: 0.35;
+    filter: grayscale(1);
+  }
+  .clients img.logo-wide { max-height: 30px; }
+  @media (max-width: 900px) {
+    .clients ul { gap: 28px 32px; }
+    .clients img { max-height: 44px; }
+    .clients img.logo-wide { max-height: 26px; }
+  }
+
+  /* ============ FOOTER BAND ============ */
+  .band {
+    background: var(--tan);
+    color: #FFFDF8;
+    padding: 40px 64px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+  }
+  .band p {
+    font-size: 15.5px;
+    font-weight: 600;
+    line-height: 1.45;
+  }
+
+  .colophon {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 22px 64px 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .colophon a { color: var(--muted); }
+  .colophon a:hover { color: var(--orange); }
+
+  /* ============ RESPONSIVE ============ */
+  @media (max-width: 900px) {
+    .hero { padding: 48px 36px 36px; gap: 44px; grid-template-columns: 250px 1fr; }
+    .portrait { width: 190px; height: 190px; }
+    .portrait::before { width: 130px; height: 130px; }
+    .portrait::after { width: 100px; height: 100px; }
+    .columns { padding: 8px 36px 40px; gap: 44px; grid-template-columns: 250px 1fr; }
+    .clients { padding: 36px 36px 56px; }
+    .band { padding: 36px 36px; grid-template-columns: repeat(2, 1fr); }
+    .colophon { padding: 20px 36px 36px; }
+  }
+  @media (max-width: 700px) {
+    .hero { grid-template-columns: 1fr; text-align: left; padding: 40px 24px 8px; }
+    .portrait { width: 160px; height: 160px; }
+    .portrait::before { width: 105px; height: 105px; inset: -9px auto auto -9px; }
+    .portrait::after { width: 82px; height: 82px; right: -8px; bottom: -8px; }
+    /* mobile order: contact → profile → experience → capabilities → education */
+    .columns { grid-template-columns: 1fr; padding: 8px 24px 40px; gap: 0; }
+    .sidebar, .main { display: contents; }
+    section { margin-top: 44px !important; }
+    .contact { order: 1; }
+    .profile { order: 2; }
+    .experience { order: 3; }
+    .caps { order: 4; }
+    .edu { order: 5; }
+    .clients { padding: 28px 24px 48px; }
+    .band { grid-template-columns: 1fr 1fr; padding: 32px 24px; gap: 24px; }
+    .colophon { padding: 18px 24px 32px; }
+  }
+
+  /* ============ PRINT ============ */
+  @media print {
+    @page { margin: 0.55in; }
+
+    body {
+      background: #fff;
+      font-size: 12px;
+      line-height: 1.5;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page { box-shadow: none; max-width: none; }
+
+    /* tighten spacing for paper */
+    .hero { padding: 0 0 28px; gap: 36px; grid-template-columns: 200px 1fr; }
+    .portrait { width: 170px; height: 170px; }
+    .portrait::before { width: 110px; height: 110px; }
+    .portrait::after { width: 88px; height: 88px; }
+    .columns { padding: 0 0 28px; gap: 36px; grid-template-columns: 210px 1fr; }
+    .clients { padding: 24px 0 32px; }
+    .band { padding: 24px 28px; }
+    .colophon { display: none; }
+
+    /* keep entries whole across page breaks */
+    .job, .contact, .caps, .edu, .clients { break-inside: avoid; page-break-inside: avoid; }
+
+    /* links read as text on paper */
+    a { text-decoration: none; color: inherit; }
+
+    /* logos print at full strength — no gray hover states on paper */
+    .clients img { opacity: 1 !important; filter: none !important; }
+
+    section + section { margin-top: 28px; }
+  }

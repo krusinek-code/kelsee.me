@@ -44,9 +44,7 @@ function drawIdle() {
 
 function initializeAudioGraph() {
   if (audioContext) return;
-  const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-  if (!AudioContextClass) return;
-  audioContext = new AudioContextClass();
+  audioContext = new AudioContext();
   analyser = audioContext.createAnalyser();
   analyser.fftSize = 256;
   source = audioContext.createMediaElementSource(audio);
@@ -75,23 +73,16 @@ function closeAudioGate() {
 }
 
 enterWithAudio.addEventListener('click', async () => {
-  // Call play synchronously inside the click gesture. Safari can discard
-  // autoplay permission if another promise is awaited first.
-  const playPromise = audio.play();
+  initializeAudioGraph();
+  if (audioContext.state === 'suspended') await audioContext.resume();
   try {
-    initializeAudioGraph();
-    const resumePromise = audioContext?.state === 'suspended'
-      ? audioContext.resume()
-      : Promise.resolve();
-    await Promise.all([playPromise, resumePromise]);
+    await audio.play();
     playButton.textContent = 'Ⅱ';
     playButton.setAttribute('aria-label', 'Pause audio');
-    if (analyser) {
-      cancelAnimationFrame(animationFrame);
-      drawAudio();
-    }
+    cancelAnimationFrame(animationFrame);
+    drawAudio();
   } catch {
-    playerNote.textContent = 'Playback needs one more tap. Use the play button to begin.';
+    playerNote.textContent = 'Autoplay was blocked. Use the play button to begin.';
   }
   closeAudioGate();
 });
@@ -115,23 +106,14 @@ audioFile.addEventListener('change', (event) => {
 });
 
 playButton.addEventListener('click', async () => {
+  initializeAudioGraph();
+  if (audioContext.state === 'suspended') await audioContext.resume();
   if (audio.paused) {
-    const playPromise = audio.play();
-    try {
-      initializeAudioGraph();
-      const resumePromise = audioContext?.state === 'suspended'
-        ? audioContext.resume()
-        : Promise.resolve();
-      await Promise.all([playPromise, resumePromise]);
-      playButton.textContent = 'Ⅱ';
-      playButton.setAttribute('aria-label', 'Pause audio');
-      if (analyser) {
-        cancelAnimationFrame(animationFrame);
-        drawAudio();
-      }
-    } catch {
-      playerNote.textContent = 'Playback was blocked. Tap play once more.';
-    }
+    await audio.play();
+    playButton.textContent = 'Ⅱ';
+    playButton.setAttribute('aria-label', 'Pause audio');
+    cancelAnimationFrame(animationFrame);
+    drawAudio();
   } else {
     audio.pause();
     playButton.textContent = '▶';
