@@ -1,0 +1,59 @@
+/* Shared identity for kelsee.me — Poppins, emblem, navigation and footer. */
+:root { --font-ui: 'Poppins', 'Avenir Next', Arial, sans-serif; --header-height: 76px; --brand-purple:#c5a0ff; }
+html { scroll-padding-top: calc(var(--header-height) + 14px); }
+body { padding-top: var(--header-height); }
+.global-skip { position:fixed; top:-120px; left:12px; z-index:120; background:#e7ccff; color:#160d20; padding:12px 16px; font:600 14px var(--font-ui); }
+.global-skip:focus { top:10px; }
+.global-header {
+ position:fixed; inset:0 0 auto 0; height:var(--header-height); z-index:90;
+ display:flex; align-items:center; justify-content:space-between; gap:16px;
+ padding:0 clamp(20px,4vw,70px); background:rgba(26,16,39,.97);
+ border-bottom:1px solid rgba(197,160,255,.3); isolation:isolate;
+}
+.global-wordmark { display:inline-flex; align-items:center; position:relative; z-index:2;
+ font:500 clamp(1.14rem,2.3vw,1.48rem)/1.1 var(--font-ui); letter-spacing:-.045em;
+ text-decoration:none; white-space:nowrap; color:#f8f1fb;
+ transition:padding-left .42s cubic-bezier(.2,.7,.2,1); }
+.global-wordmark .wordmark-me { color:var(--brand-purple); }
+.global-emblem { position:absolute; left:clamp(20px,4vw,70px); top:52px;
+ width:114px; height:114px; border-radius:50%; object-fit:contain; z-index:1;
+ pointer-events:none; filter:drop-shadow(0 8px 20px rgba(11,4,22,.5));
+ transition:top .42s cubic-bezier(.2,.7,.2,1),width .42s cubic-bezier(.2,.7,.2,1),height .42s cubic-bezier(.2,.7,.2,1);
+}
+body.header-compact .global-emblem { top:14px; width:46px; height:46px; }
+body.header-compact .global-wordmark { padding-left:64px; }
+.global-nav { display:flex; align-items:center; gap:clamp(14px,2.7vw,36px); position:relative; z-index:2; }
+.global-nav a { color:#eee8f4; font:400 .76rem/1.2 var(--font-ui); text-decoration:none; text-underline-offset:6px; }
+.global-nav a:hover { color:#d7b4ff; }
+.global-nav a[aria-current=page] { text-decoration:underline; text-decoration-color:var(--brand-purple); }
+.global-header a:focus-visible, .global-footer a:focus-visible { outline:3px solid #e7ccff; outline-offset:5px; }
+.nav-experiment { display:inline-grid; grid-template-areas:'nav'; min-width:116px; text-align:center; }
+.nav-experiment span { grid-area:nav; transition:opacity .2s; }
+.nav-experiment .nav-plain { opacity:0; color:#d7b4ff; }
+.nav-experiment:hover .nav-odd, .nav-experiment:focus-visible .nav-odd { opacity:0; }
+.nav-experiment:hover .nav-plain, .nav-experiment:focus-visible .nav-plain { opacity:1; }
+.global-footer { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px;
+ padding:34px clamp(20px,5vw,80px); background:#1a1027; color:#d5c6df;
+ border-top:1px solid rgba(197,160,255,.28); font:400 .76rem/1.5 var(--font-ui); }
+.global-footer a { color:#d7b4ff; text-underline-offset:5px; }
+@media(max-width:700px) {
+ :root { --header-height:68px; }
+ .global-header { gap:8px; }
+ .global-wordmark { font-size:1.1rem; }
+ .global-emblem { top:49px; width:82px; height:82px; }
+ body.header-compact .global-emblem { top:13px; width:42px; height:42px; }
+ body.header-compact .global-wordmark { padding-left:51px; }
+ .global-nav { gap:12px; }
+ .global-nav a { font-size:.69rem; }
+ .nav-experiment { min-width:96px; }
+}
+@media(max-width:390px) {
+ .global-header { padding-inline:16px; }
+ .global-emblem { left:16px; }
+ .global-wordmark { font-size:1rem; }
+ .global-nav a { font-size:.63rem; }
+ .nav-experiment { min-width:88px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ .global-wordmark,.global-emblem,.nav-experiment span { transition:none; }
+}
