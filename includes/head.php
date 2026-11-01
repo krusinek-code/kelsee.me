@@ -15,9 +15,15 @@ $pageStylesheet = $pageStylesheet ?? null;
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<<<<<<< Updated upstream
   <link rel="stylesheet" href="/assets/css/global.css">
   <?php if ($pageStylesheet): ?>
     <link rel="stylesheet" href="/assets/css/<?= htmlspecialchars($pageStylesheet, ENT_QUOTES, 'UTF-8') ?>">
+=======
+  <link rel="stylesheet" href="/assets/css/global.css?v=7">
+  <?php if ($pageStylesheet): ?>
+    <link rel="stylesheet" href="/assets/css/<?= htmlspecialchars($pageStylesheet, ENT_QUOTES, 'UTF-8') ?>?v=7">
+>>>>>>> Stashed changes
   <?php endif; ?>
 </head>
 <body>
