@@ -1,19 +1,9 @@
-# kelsee.me — v10: accessibility + résumé new tab
+# kelsee.me v12 — original logo restored
 
-This package builds on v9. Homepage header portrait peeks and animates on scroll; article header portrait is compact and static. Both pages use the same PHP includes.
+This is v11 with **only the logo asset reverted** to the original PNG (`/assets/images/kelsee-emblem.png`). The vector SVG trace was removed from the deployment package.
 
-## Changes
-- Résumé link opens `/resume/` in a new tab with `target="_blank" rel="noopener"` and an accessible new-tab announcement. `noopener` prevents the new tab from controlling the original window.
-- Keyboard skip links for **main content** and **navigation**, visible on focus.
-- Focus indicators for interactive elements; main landmarks can receive skip-link focus.
-- Screen-reader-only utility class.
-- Article reveal text remains visible when JavaScript is unavailable; reduced-motion preferences remain supported.
-- Asset cache versions bumped to v10.
+All v11 editorial refinements remain, including the six-part chapter index, improved typography and spacing, section indicator, and original article copy. The shared PHP header/footer, homepage peek-to-dock behavior, compact static article logo, Poppins wordmark, clean URLs, résumé new-tab behavior, skip links, and reduced-motion support are unchanged.
 
-## Deploy
-Upload all files (including `.htaccess`) preserving folders. Remove stale `index.html` from the site root and article directory after backing them up. Keep your existing résumé separately: this archive does not include it.
+Upload these files to the PHP site root, preserving the directories. Back up and remove older `index.html` pages that might override `index.php`. The résumé is not included; keep your existing `/resume/` intact.
 
-Public URLs stay clean: `/`, `/thoughts/vote-every-day/`, `/resume/`.
-
-## SVG
-The current illustrated emblem is still the original PNG, not an SVG. When the larger original is provided, we can evaluate vector tracing/redrawing separately; simply embedding a raster image in SVG would not make it a true vector.
+The logo reference has a `?v=12` query to bypass browser caches.

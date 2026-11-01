@@ -3,6 +3,6 @@
   <span>Artist · Technologist · Curious human</span>
   <a href="#top">Back to top ↑</a>
 </footer>
-<script src="/assets/js/site.js?v=10" defer></script>
+<script src="/assets/js/site.js?v=11" defer></script>
 </body>
 </html>
