@@ -1,23 +1,40 @@
-# kelsee.me — PHP includes + Poppins (v6)
+# kelsee.me — PHP shared layout v7
 
-Static-file publishing with PHP includes; **no CMS, database, or content-generation backend**.
+This package fixes the stale editorial header issue. Both pages call the **same** `/includes/header.php` and `/includes/footer.php` and use the same Poppins wordmark, portrait and navigation.
 
-## Pages
-- `/index.php` — homepage
-- `/thoughts/vote-every-day/index.php` — immersive editorial page
-- `/includes/head.php`, `/includes/header.php`, `/includes/footer.php` — shared components
-- `/assets/css/global.css` — Poppins and shared visual identity
-- `/assets/css/home.css` and `/assets/css/editorial/vote-every-day.css` — page-specific art direction
-- `/assets/js/site.js` — header portrait docks on scroll
-- `/assets/js/editorial-vote.js` — original editorial scroll effects
-- `/assets/images/kelsee-emblem.png` — illustration from your uploaded logo
+## Clean URLs — no `.php` in the browser address
 
-## Publishing
-Upload the **contents** of this directory to your PHP-enabled web root. `index.php` files are served by standard PHP hosting. Preserve the folder structure. The site assumes deployment at the root of `kelsee.me` because asset and navigation URLs begin with `/`.
+- Homepage: `https://kelsee.me/` (served from `/index.php`)
+- Editorial: `https://kelsee.me/thoughts/vote-every-day/` (served from `/thoughts/vote-every-day/index.php`)
+- Résumé link: `https://kelsee.me/resume/` (your existing résumé must be moved separately)
 
-The existing résumé is **not included or overwritten**. Back up your current root résumé before deploying. Move it to `/resume/` separately, or update the link when ready. For a local test, run `php -S localhost:8000 -t .` from this directory and visit `http://localhost:8000/`.
+The `.htaccess` file tells Apache to prefer `index.php` over `index.html`. This is a PHP site with file-based editorial content, no CMS or database, not a headless setup. You can continue using one bespoke PHP page per article.
 
-Google Fonts serves Poppins when connected; the site falls back to local sans-serif fonts if unavailable. To eliminate this dependency later, self-host a licensed webfont with CSS `@font-face` (do not redistribute font files in this package).
+## IMPORTANT: remove outdated HTML files
 
-## QA
-Verify on desktop/mobile, including Safari, keyboard focus, reduced-motion, logo loading, and the editorial reveal animations. Shared header and footer now come from one source. The full editorial copy and the previously approved non-animated gradient background are preserved.
+If you uploaded earlier HTML prototypes, **remove or rename** the old `/index.html` and `/thoughts/vote-every-day/index.html` on the server after backing them up. Otherwise old links, cached pages, or server directory-index preferences may still show the old version.
+
+Upload **all files including `.htaccess`** to your site root; preserve the folder structure. Do not overwrite your résumé until it has been backed up. If the hosting configuration disallows `Options -MultiViews`, remove only that line from `.htaccess` and retain `DirectoryIndex index.php index.html`.
+
+All shared CSS, scripts, and emblem URLs include a `?v=7` version query to encourage fresh loading after deployment. Hard-refresh if your browser still shows an older version.
+
+## Testing
+
+Run `php -S localhost:8000 -t .` from this folder, then open:
+- `http://localhost:8000/`
+- `http://localhost:8000/thoughts/vote-every-day/`
+
+Note: PHP's built-in server ignores `.htaccess`, but serves directory `index.php` files. Test the Apache `.htaccess` behavior on the actual host.
+
+## Structure
+
+- `/index.php` — homepage with clean editorial link
+- `/thoughts/vote-every-day/index.php` — editorial page
+- `/includes/head.php` — metadata and shared CSS
+- `/includes/header.php` — fixed Poppins header and portrait
+- `/includes/footer.php` — footer and shared JS
+- `/assets/css/global.css` — shared styling
+- `/assets/css/home.css` — homepage-specific styling
+- `/assets/css/editorial/vote-every-day.css` — editorial-specific styling
+
+No new animations or changes to the approved editorial layout in this revision.
