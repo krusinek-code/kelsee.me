@@ -57,3 +57,17 @@ body.header-compact .global-wordmark { padding-left:64px; }
 @media(prefers-reduced-motion:reduce) {
  .global-wordmark,.global-emblem,.nav-experiment span { transition:none; }
 }
+
+/* v9: The homepage portrait peeks; all article pages render docked immediately. */
+body.header-static .global-emblem,
+body.header-static .global-wordmark { transition:none; }
+/* The source emblem is a 430px raster. At its compact native CSS size, it is
+   rendered from the original, not an enlarged or stretched image. */
+.global-emblem { aspect-ratio:1 / 1; object-fit:contain; flex-shrink:0; }
+
+/* Accessibility: skip navigation, visible focus, and screen-reader-only notices. */
+.sr-only { position:absolute!important; width:1px!important; height:1px!important; padding:0!important; margin:-1px!important; overflow:hidden!important; clip:rect(0,0,0,0)!important; white-space:nowrap!important; border:0!important; }
+.global-skip-nav:focus { top:62px; }
+:where(a,button,input,select,textarea,[tabindex]):focus-visible { outline:3px solid #f4d7ff; outline-offset:4px; }
+#main:focus { outline:none; }
+@media (prefers-reduced-motion:reduce) { html:focus-within { scroll-behavior:auto; } }
