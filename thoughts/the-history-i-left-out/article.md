@@ -34,6 +34,8 @@ I don’t have a timesheet. But when I add up the rehearsals, Sunday sets, pract
 
 Those hours explain the ear I bring to music now. I can hear an arrangement develop, anticipate a change, and know when something feels right before I can explain why.
 
+I didn’t realize how far that listening would follow me. Years later, I was doing much the same thing with technology: listening for the missing part, and understanding how individual pieces work together. The instruments were different. The way I listened wasn’t.
+
 ## Most of the work happens before anyone hears a note.
 
 After high school, I played for a few years at a church that met in a temporary space. Every Sunday meant bringing everything in, setting up tables and chairs, setting up the music, rehearsing, playing the service, and packing it all away. I did that every week for at least a couple of years.
@@ -50,6 +52,8 @@ What I learned was how to learn. I wanted to learn art, and I learned it. Try so
 
 Working with my hands taught me that I can build. I have a body. I make.
 
+I wasn’t learning to make one kind of art. I was learning how materials, structure, composition, and experience relate to each other. When I started building digital experiences professionally, I wasn’t leaving art behind. I was working in another medium.
+
 ## I’ve been breaking computers since I was in diapers.
 
 I was pressing keys on a computer keyboard at two, around 1988. That’s ordinary for toddlers now. Back then, it wasn’t. I grew up on a computer with the big floppy disks, and around twelve I built a fan site for Weird Al Yankovic.
@@ -60,11 +64,23 @@ Still, when I entered the job market after college, I realized how little I knew
 
 For more than twenty years since, I’ve built digital platforms, including work for the City of Phoenix, Phoenix Sky Harbor International Airport, and the Arizona Lottery. People see the website. They don’t see the structure underneath, the same way nobody at a Sunday service saw the setup.
 
+Most of my work in code circles the same questions. What does this need? What changes, and what stays fixed? What happens when the thing that changes moves? Two things can look alike, like renting a vehicle and selling one, and still need different models. They share some parameters and not others.
+
+Then I decide what to share. If something repeats often enough, it belongs in one place, defined once and used everywhere. But sharing has limits. Make too much global, and one change breaks things everywhere. It’s a thin line.
+
+It’s classification, the same question I ask about historical artifacts: where does this belong? Look for the patterns. Set the structure, and keep what changes moving through it.
+
+Then I simplify, because I know I’ll be the one fixing it later. I got good at efficient work by being the person who had to maintain it.
+
+I test my own work too. I should be able to break it better than anybody else, because I wrote it. I feel the same way about music.
+
+I wasn’t changing disciplines. I was adding instruments.
+
 ## I didn’t know how much of this counted.
 
 Some of this history I kept quiet because I didn’t want to sound arrogant. Some of it simply didn’t occur to me to mention.
 
-I think I had absorbed a distinction between what counted in “the real career world” and everything else. Playing music at church. Writing songs after a set. Learning by ear. Making things because I wanted to understand how.
+I think I had absorbed a distinction between what counted in “the real career world” and everything else. Playing music at church. Writing songs after a set. Learning by ear. Earning Girl Scout badges by figuring out how to do things. Making things because I wanted to understand how.
 
 I knew those experiences mattered to me. But when it was time to explain what I could do, I didn’t always treat them as relevant. Sometimes I almost treated them as less real.
 
@@ -97,4 +113,3 @@ That applies when we judge other people too. We meet them somewhere in the middl
 It applies to you, too. What would your record include if you counted everything?
 
 I’m here, I’m breathing, and I’ve been practicing for most of it. I’m ready to include that part of the story, and to see what I make with it next.
-
