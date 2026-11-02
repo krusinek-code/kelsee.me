@@ -359,6 +359,14 @@
     font-weight: 600;
     line-height: 1.45;
   }
+  /* closing line spans the full band */
+  .band .sign {
+    grid-column: 1 / -1;
+    font-style: italic;
+    font-weight: 500;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 253, 248, 0.3);
+  }
 
   .colophon {
     max-width: var(--maxw);
@@ -390,15 +398,16 @@
     .portrait { width: 160px; height: 160px; }
     .portrait::before { width: 105px; height: 105px; inset: -9px auto auto -9px; }
     .portrait::after { width: 82px; height: 82px; right: -8px; bottom: -8px; }
-    /* mobile order: contact → profile → experience → capabilities → education */
+    /* mobile order: contact → profile → independent work → experience → capabilities → education */
     .columns { grid-template-columns: 1fr; padding: 8px 24px 40px; gap: 0; }
     .sidebar, .main { display: contents; }
     section { margin-top: 44px !important; }
     .contact { order: 1; }
     .profile { order: 2; }
-    .experience { order: 3; }
-    .caps { order: 4; }
-    .edu { order: 5; }
+    .independent { order: 3; }
+    .experience { order: 4; }
+    .caps { order: 5; }
+    .edu { order: 6; }
     .clients { padding: 28px 24px 48px; }
     .band { grid-template-columns: 1fr 1fr; padding: 32px 24px; gap: 24px; }
     .colophon { padding: 18px 24px 32px; }
