@@ -4,8 +4,9 @@ $pageDescription = 'Kelsee Rusinek — artist, technologist, and curious human. 
 $pageStylesheet = 'home.css';
 $activeNav = 'home';
 $headerMode = 'peek'; // Homepage alone gets the animated portrait entrance.
+require __DIR__ . '/includes/articles.php';
 require __DIR__ . '/includes/head.php';
 require __DIR__ . '/includes/header.php';
 ?>
-<main id="main" tabindex="-1"><section class="hero" id="top"><div class="eyebrow">Artist · Technologist · Curious human</div><h1>What if we <em>thought</em> differently?</h1><p>Art, technology, human behavior, and the architecture of decisions. A collection of thoughts and creative experiments by Kelsee Rusinek.</p></section><section class="features" aria-labelledby="featured"><div class="meta">Thought experiment 001 / Featured editorial</div><h2 id="featured">You Vote<br>Every Day.</h2><p>An exploration of pride, principle, autonomy, and the choices that shape the world around us. Designed as an immersive editorial experience.</p><a href="/thoughts/vote-every-day/">Experience the story →</a></section></main>
+<main id="main" tabindex="-1"><section class="hero" id="top"><div class="eyebrow">Artist · Technologist · Curious human</div><h1>What if we <em>thought</em> differently?</h1><p>Art, technology, human behavior, and the architecture of decisions. A collection of thoughts and creative experiments by Kelsee Rusinek.</p></section><section class="features" aria-labelledby="featured"><div class="features-head"><h2 id="featured">Thought experiments</h2><a class="all-link" href="/thoughts/">All articles →</a></div><div class="article-grid"><?php foreach (kelsee_articles() as $article) { echo kelsee_article_card($article, 'h3'); } ?></div></section></main>
 <?php require __DIR__ . '/includes/footer.php'; ?>
