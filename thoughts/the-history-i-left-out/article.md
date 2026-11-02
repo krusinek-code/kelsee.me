@@ -22,7 +22,7 @@ What I take seriously is simpler than that. I’m here at all. I’m breathing, 
 
 ## Music has been part of my life for as long as I can remember.
 
-I’ve listened to music all my life and played with instruments for as long as I can remember. I started playing at four. By middle school, I was playing keyboards in a band at church.
+I started playing at four. By middle school, I was playing keyboards in a band at church.
 
 Each week, I learned songs by ear. I listened for the parts and searched the keyboard for sounds that matched. I practiced at home. We rehearsed once or twice a week and played two Sunday services, then did it again the next week.
 
@@ -30,7 +30,7 @@ That repetition taught me that liking a song and being ready to play it are diff
 
 In high school, I also played weekly with older, seasoned musicians. We would practice, play a set, and stay afterward to write songs. I sang, and I helped put together layered recordings of my vocals. We built backing tracks and used in-ear monitors. The musicians around me taught me, and I had work of my own to contribute.
 
-I don’t have a timesheet. Looking back at the rehearsals, Sunday sets, practice at home, and songwriting, I’m probably accounting for thousands of hours. People heard me play. They recognized my ability. I’m learning to account for the work behind it, too.
+I don’t have a timesheet. But when I add up the rehearsals, Sunday sets, practice at home, and songwriting, it’s a lot of hours that never made it onto a résumé. People heard me play. I’m only now learning to account for the work behind it.
 
 Those hours explain the ear I bring to music now. I can hear an arrangement develop, anticipate a change, and know when something feels right before I can explain why.
 
@@ -66,7 +66,7 @@ Some of this history I kept quiet because I didn’t want to sound arrogant. Som
 
 I think I had absorbed a distinction between what counted in “the real career world” and everything else. Playing music at church. Writing songs after a set. Learning by ear. Making things because I wanted to understand how.
 
-I knew those experiences mattered to me. But when it came time to explain what I could do, I didn’t always treat them as relevant. Sometimes I almost treated them as less real.
+I knew those experiences mattered to me. But when it was time to explain what I could do, I didn’t always treat them as relevant. Sometimes I almost treated them as less real.
 
 Looking back, I can see how much I learned there—and how often I’ve used it since.
 
@@ -82,7 +82,7 @@ Then I had a little girl, and my attention went to her.
 
 She’s four and a half now. I have some air to breathe, and I choose to make music with it.
 
-Music was the love I never left. There was a dry year or two when deep pain made it hard to play, or even listen. It was the quietest that part of me had ever been.
+Music was the love I never left. There was a year or two when I couldn’t even listen. It was the quietest that part of me had ever been.
 
 But it was still there.
 
@@ -93,6 +93,8 @@ I started this dig to account for my own work. It reached much further back than
 It made me reconsider what I call imposter syndrome. How accurately was I judging myself if I kept leaving evidence out of my own record?
 
 That applies when we judge other people too. We meet them somewhere in the middle. There may be years of practice behind something they make look easy.
+
+It applies to you, too. What would your record include if you counted everything?
 
 I’m here, I’m breathing, and I’ve been practicing for most of it. I’m ready to include that part of the story, and to see what I make with it next.
 

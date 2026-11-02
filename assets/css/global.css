@@ -87,3 +87,8 @@ body.header-static .global-wordmark { transition:none; }
 .card-dek { margin:0; max-width:none; font-size:1rem; line-height:1.65; color:#3d2d48; }
 .card-cta { margin-top:auto; padding-top:6px; font-weight:700; font-size:.92rem; color:#543474; }
 @media (prefers-reduced-motion:reduce) { .article-card { transition:none; } .article-card:hover { transform:none; } }
+/* Homepage: one featured card, wider and louder than the list cards. */
+.article-feature { max-width:900px; }
+.article-feature .article-card { padding:clamp(28px,4.5vw,56px); gap:18px; }
+.article-feature .card-title { font-size:clamp(2.2rem,5vw,4rem); }
+.article-feature .card-dek { font-size:clamp(1.02rem,1.6vw,1.2rem); max-width:62ch; }
