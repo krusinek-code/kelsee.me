@@ -4,21 +4,33 @@
 
 Excuse me! I have a few things I need to say.
 
-Lately I’ve been digging through my own history. Along the way, I found things I’ve been leaving out for years. Here they are.
+Lately I’ve been digging through my own history and finding things I’ve been leaving out for years. Some felt unrelated to my career. Some were so familiar to me that I forgot they needed explaining.
+
+Words like “homeschooled,” “church,” and “artist” can bring a whole story with them before you’ve told your own. I’ve made assumptions about other people that way, too.
+
+Here’s some of the context I left out.
 
 ## I wasn’t homeschooled for religion.
 
-My brother and I learned through accelerated programs designed specifically for us, built from extensive research, because school wasn’t keeping up.
+I learned through accelerated programs designed specifically for me, built from extensive research, because school didn’t fit my educational needs.
 
 I followed the rules I had to, like any kid. That part wasn’t homeschooling. It was how I was raised: to care more about values than about the structures I was supposed to follow, and to be stubborn about it.
 
+Entrepreneurship runs on both sides of my family. I grew up watching people build things of their own, and absorbing the belief that if you didn’t know how to do something yet, you could learn.
+
+That attitude shaped how I approached music, art, technology, and eventually my work. Looking back, I can see how early it started.
+
 ## I didn’t go to church for religion.
 
-I went for the other kids, and for the music. That church wasn’t really about religion either. It was a community built for young people.
+Religion can be controversial. People bring different experiences, beliefs, and assumptions to it. I went to church. Whatever you attach to that, here’s what it meant to me.
 
-Sometimes we go somewhere open to experiencing what it might be like, while knowing something else is feeding us too. For me, that was the music.
+I went for the other kids, and for the music. It was a community built for young people. I was open to what I might find there, and music became something spiritual for me—a way to feel connected to something beyond myself.
 
-What I take seriously is simpler than that. I’m here at all. I’m breathing, and I don’t know how that happened. I have eyes, a mind, and a body that can apparently make a difference. Why wouldn’t I take that as seriously as I possibly can?
+I’m here. I’m breathing. None of us fully know how any of this happened. I have eyes, a mind, and a body that can make a difference.
+
+To me, that’s the most important thing I can do with my life: pay attention to the world, understand what I can, and help change it for the better. I can’t think of a purpose more valuable than leaving something better because I was here.
+
+Music became one of the ways I could do that.
 
 ## Music has been part of my life for as long as I can remember.
 
@@ -32,7 +44,7 @@ In high school, I also played weekly with older, seasoned musicians. We would pr
 
 I don’t have a timesheet. But when I add up the rehearsals, Sunday sets, practice at home, and songwriting, it’s a lot of hours that never made it onto a résumé. People heard me play. I’m only now learning to account for the work behind it.
 
-Those hours explain the ear I bring to music now. I can hear an arrangement develop, anticipate a change, and know when something feels right before I can explain why.
+That’s what hours like those build: an ear that hears an arrangement develop, anticipates a change, and knows when something feels right before it can explain why.
 
 I didn’t realize how far that listening would follow me. Years later, I was doing much the same thing with technology: listening for the missing part, and understanding how individual pieces work together. The instruments were different. The way I listened wasn’t.
 
@@ -41,6 +53,8 @@ I didn’t realize how far that listening would follow me. Years later, I was do
 After high school, I played for a few years at a church that met in a temporary space. Every Sunday meant bringing everything in, setting up tables and chairs, setting up the music, rehearsing, playing the service, and packing it all away. I did that every week for at least a couple of years.
 
 When I remember those mornings, I remember how much of being a musician happened before anyone heard a note. Most of the work was invisible, and the service depended on it.
+
+Anyone judging the band that morning only judged the part they heard.
 
 I didn’t know yet how well that would describe my career.
 
@@ -70,9 +84,9 @@ Then I decide what to share. If something repeats often enough, it belongs in on
 
 It’s classification, the same question I ask about historical artifacts: where does this belong? Look for the patterns. Set the structure, and keep what changes moving through it.
 
-Then I simplify, because I know I’ll be the one fixing it later. I got good at efficient work by being the person who had to maintain it.
+Then I simplify, because I know I’ll be the one fixing it later. Nothing teaches efficiency like being the person who has to maintain it.
 
-I test my own work too. I should be able to break it better than anybody else, because I wrote it. I feel the same way about music.
+I test my own work too. Whoever builds something should be the first to break it, because they know where it’s weakest. I feel the same way about music.
 
 I wasn’t changing disciplines. I was adding instruments.
 
@@ -80,7 +94,15 @@ I wasn’t changing disciplines. I was adding instruments.
 
 Some of this history I kept quiet because I didn’t want to sound arrogant. Some of it simply didn’t occur to me to mention.
 
-I think I had absorbed a distinction between what counted in “the real career world” and everything else. Playing music at church. Writing songs after a set. Learning by ear. Earning Girl Scout badges by figuring out how to do things. Making things because I wanted to understand how.
+I remember an early musical practice where someone started playing a song I knew. I didn’t say anything. I just listened. Then he named the artist and asked if I knew it. The song was actually from earlier in that artist’s history, with a band, and I named the band.
+
+“Oh,” he said. “So you do know.”
+
+It’s a small moment, but it was typical, and not only in music. In the industry, I often worked with people who had started before me, and they assumed that meant they had more experience. It’s easy to read someone’s age, or their start date, as a measure of what they know. People did that with me. I’ve done it to others, too. Some of them had been in the field longer. But my access to computers—and my curiosity about them—started unusually early for my generation, long before anyone paid me for the work.
+
+I rarely said so. Experience doesn’t start the day someone hires you, but I let people believe it did.
+
+Most of us absorb a distinction between what counts in “the real career world” and everything else. I did too. Playing music at church. Writing songs after a set. Learning by ear. Earning Girl Scout badges by figuring out how to do things. Making things because I wanted to understand how.
 
 I knew those experiences mattered to me. But when it was time to explain what I could do, I didn’t always treat them as relevant. Sometimes I almost treated them as less real.
 
@@ -94,9 +116,9 @@ There was a long break from playing, roughly eight years.
 
 A part of my music life ended badly, and I was hurt. Much of what I had believed, I didn’t believe anymore. I stepped away from writing music, and for a while I barely listened to it at all. I listened to people talking on YouTube instead. Then COVID happened, and I was still hurt. People tried to get me back into music, but I wasn’t ready.
 
-Then I had a little girl, and my attention went to her.
+Then motherhood changed my focus. It’s the most important thing I’ve ever taken on, and it will never be finished. I don’t take anything I do lightly, and I take this most seriously of all. I’m the model now, so I have to make sure the model is solid.
 
-She’s four and a half now. I have some air to breathe, and I choose to make music with it.
+Now I have some air to breathe again, and I choose to make music with it.
 
 Music was the love I never left. There was a year or two when I couldn’t even listen. It was the quietest that part of me had ever been.
 
@@ -106,9 +128,11 @@ But it was still there.
 
 I started this dig to account for my own work. It reached much further back than my résumé.
 
-It made me reconsider what I call imposter syndrome. How accurately was I judging myself if I kept leaving evidence out of my own record?
+It made me reconsider what I call imposter syndrome. How accurately can any of us judge ourselves if we keep leaving evidence out of our own record?
 
 That applies when we judge other people too. We meet them somewhere in the middle. There may be years of practice behind something they make look easy.
+
+When our own relationship with something is complicated, it’s easy to assume we know what it meant to someone else.
 
 It applies to you, too. What would your record include if you counted everything?
 
