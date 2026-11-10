@@ -8,6 +8,7 @@
       <span class="nav-odd" aria-hidden="true">Thought Experiments</span>
       <span class="nav-plain" aria-hidden="true">Articles</span>
     </a>
+    <a href="/awards/" <?= ($activeNav ?? '') === 'awards' ? 'aria-current="page"' : '' ?>>Awards</a>
     <a href="/resume/" target="_blank" rel="noopener" <?= ($activeNav ?? '') === 'resume' ? 'aria-current="page"' : '' ?>>Résumé<span class="sr-only"> (opens in a new tab)</span></a>
   </nav>
 </header>
