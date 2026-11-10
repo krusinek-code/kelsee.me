@@ -83,6 +83,17 @@ require __DIR__ . '/../includes/header.php';
       <p class="asset-note">Developed at RIESTER in collaboration with designers, supporting developers, and airport stakeholders. Project screenshots, architecture details, and independently verified outcomes can be added after review.</p>
     </section>
 
+    <section class="crew-credits" aria-labelledby="credits-title">
+      <div class="section-meta">THE CREW / PROJECT CREDITS</div>
+      <h2 id="credits-title">A shared <em>flight plan.</em></h2>
+      <p>This work was developed at <a href="https://riester.com/" target="_blank" rel="noopener noreferrer">RIESTER</a> for Phoenix Sky Harbor International Airport. I led major front-end and technical implementation responsibilities as part of a larger group of designers, developers, project leads, content teams, integration partners, and airport stakeholders.</p>
+      <div class="crew-grid">
+        <div><span>AGENCY</span><strong><a href="https://riester.com/" target="_blank" rel="noopener noreferrer">RIESTER</a></strong><p>Creative and digital agency responsible for the broader project team.</p></div>
+        <div><span>AGENCY FOUNDER</span><strong><a href="https://riester.com/people/tim-riester" target="_blank" rel="noopener noreferrer">Tim Riester</a></strong><p>Founder and CEO of RIESTER. Agency leadership context, not an assertion of hands-on project involvement.</p></div>
+        <div><span>PROJECT TEAM</span><strong>Design, development &amp; client partners</strong><p>Individual collaborators and LinkedIn profiles can be added after their specific contributions are confirmed.</p></div>
+      </div>
+    </section>
+
     <section class="landing" aria-labelledby="landing-title">
       <div class="landing-stamp">PHX <span aria-hidden="true">✳</span> ARRIVED</div>
       <div class="section-meta">05 / TOUCHDOWN</div>
