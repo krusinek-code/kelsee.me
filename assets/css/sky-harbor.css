@@ -83,3 +83,16 @@ body { margin:0; background:#1a1027; color:#f8f1fb; font:400 16px/1.65 var(--fon
 @media(max-width:700px) { .flight-hero { min-height:auto; }.hero-content { padding-top:75px; padding-bottom:100px; }.flight-hero h1 { font-size:clamp(3.2rem,13vw,5.5rem); }.runway-art { width:105vw; right:-60%; top:17%; opacity:.22; }.flight-status { gap:20px; }.manifest-grid { grid-template-columns:1fr; gap:15px; }.manifest h2 { max-width:520px; }.section-heading { display:block; }.section-heading>p { margin-top:20px; }.phase { grid-template-columns:1fr; gap:20px; }.phase-index { flex-direction:row; align-items:baseline; gap:18px; }.phase-index>span { font-size:3.5rem; }.systems-grid { grid-template-columns:1fr; }.system-card { min-height:220px; }.landing-stamp { width:75px; height:75px; top:30px; font-size:.5rem; }.landing { padding-top:135px; }.landing blockquote { margin-block:55px; } }
 @media(max-width:420px) { .flight-kicker { font-size:.6rem; }.flight-status { grid-template-columns:1fr 1fr; }.flight-status strong { font-size:.75rem; }.hero-actions { align-items:flex-start; flex-direction:column; }.capability-strip { justify-content:flex-start; } }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; }.flight-button { transition:none; }.flight-button:hover { transform:none; } }
+
+/* Shared project credits */
+.crew-credits { background:#f3edf3; color:#21152b; padding:clamp(76px,9vw,130px) clamp(24px,9vw,140px); }
+.crew-credits h2 { font-size:clamp(2.8rem,6vw,6.3rem); line-height:1.04; letter-spacing:-.07em; }
+.crew-credits h2 em { color:#8058a2; }
+.crew-credits>p { max-width:820px; font-size:1.12rem; line-height:1.8; margin-bottom:48px; }
+.crew-credits a { color:#563578; text-underline-offset:4px; }
+.crew-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.crew-grid>div { padding:26px 0; border-top:2px solid #a88db8; }
+.crew-grid span { display:block; font-size:.68rem; font-weight:700; letter-spacing:.15em; color:#735887; margin-bottom:13px; }
+.crew-grid strong { display:block; font-size:clamp(1.2rem,2vw,1.7rem); line-height:1.25; margin-bottom:12px; }
+.crew-grid p { font-size:.88rem; line-height:1.65; color:#53465c; max-width:360px; }
+@media(max-width:700px) { .crew-grid { grid-template-columns:1fr; gap:8px; } }
