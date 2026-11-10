@@ -43,7 +43,7 @@ body.header-compact .global-wordmark { padding-left:64px; }
  .global-emblem { top:49px; width:82px; height:82px; }
  body.header-compact .global-emblem { top:13px; width:42px; height:42px; }
  body.header-compact .global-wordmark { padding-left:51px; }
- .global-nav { gap:12px; }
+ .global-nav { gap:clamp(8px,2vw,12px); }
  .global-nav a { font-size:.69rem; }
  .nav-experiment { min-width:96px; }
 }
@@ -52,7 +52,9 @@ body.header-compact .global-wordmark { padding-left:64px; }
  .global-emblem { left:16px; }
  .global-wordmark { font-size:1rem; }
  .global-nav a { font-size:.63rem; }
- .nav-experiment { min-width:88px; }
+ .nav-experiment { min-width:0; }
+ .nav-experiment .nav-odd { opacity:0; }
+ .nav-experiment .nav-plain { opacity:1; }
 }
 @media(prefers-reduced-motion:reduce) {
  .global-wordmark,.global-emblem,.nav-experiment span { transition:none; }

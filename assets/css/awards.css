@@ -1,0 +1,40 @@
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; background: #f3edf3; color: #1a1027; font: 16px/1.6 var(--font-ui); }
+.awards-hero, .award { padding: clamp(32px, 7vw, 96px) clamp(20px, 8vw, 120px); }
+.awards-hero {
+  background: radial-gradient(ellipse at top right, #543474, transparent 65%), #1a1027;
+  color: #f8f1fb;
+  border-bottom: 5px solid #eac16d;
+}
+.awards-hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 11vw, 8rem);
+  line-height: 1;
+  letter-spacing: -.075em;
+}
+.awards-hero p { max-width: 42ch; margin: 1rem 0 0; color: #e5d5ed; }
+.award { max-width: 1500px; margin-inline: auto; }
+.award-overview { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); gap: clamp(24px, 5vw, 72px); }
+.award h2 { margin: .5rem 0; font-size: clamp(2rem, 4vw, 4rem); line-height: 1.05; letter-spacing: -.055em; }
+.award-badge {
+  display: inline-block;
+  margin: 0;
+  padding: 4px 10px;
+  background: #eac16d;
+  font-size: .8rem;
+  font-weight: 700;
+}
+.award-category, .award figcaption, .award dd { color: #534361; font-size: .9rem; }
+.award a { color: #543474; text-underline-offset: .18em; }
+.award :is(a, summary):focus-visible { outline-color: #543474; }
+.award figure { margin: 0; }
+.award img { display: block; width: 100%; height: auto; border: 1px solid #e3d6ea; }
+.award figcaption { margin-top: .5rem; }
+.award-credits { margin-top: 2rem; padding-block: 1rem; border-block: 1px solid #cbbbd4; }
+.award-credits summary { width: fit-content; cursor: pointer; font-weight: 700; }
+.award-credits dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 1rem; }
+.award-credits dt { font-weight: 600; }
+.award-credits dd { margin: 0; }
+@media (max-width: 780px) {
+  .award-overview { grid-template-columns: 1fr; }
+}
